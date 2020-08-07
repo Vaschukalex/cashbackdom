@@ -1,30 +1,30 @@
 <?php
 
 
-$Fio = $_POST['Fio'];
-$Bir_day = $_POST['Bir_day'];
-$Mob_tel = $_POST['Mob_tel'];
-$Email = $_POST['E-mail'];
-$Town_when_buy_kv = $_POST['Town_when_buy_kv'];
-$Zastroischik = $_POST['Zastroischik'];
-$JK = $_POST['JK'];
-$Price_kvartirif = $_POST['Price_kvartiri(from)'];
-$Price_kvartirit = $_POST['Price_kvartiri(to)'];
-$Kolvo_komnat = $_POST['Kol-vo_komnat'];
-$Srok_sdachi = $_POST['Srok_sdachi'];
-$Ploschad_kvartirif = $_POST['Ploschad_kvartiri(from)'];
-$Ploschad_kvartirit = $_POST['Ploschad_kvartiri(to)'];
-$Ploschad_kuhnif = $_POST['Ploschad_kuhni(from)'];
-$Ploschad_kuhnit = $_POST['Ploschad_kuhni(to)'];
-$Raion = $_POST['Raion'];
-$Etazhf = $_POST['Etazh(from)'];
-$Etazht = $_POST['Etazh(to)'];
-$Etazhnost_domaf = $_POST['Etazhnost_doma(from)'];
-$Etazhnost_domat = $_POST['Etazhnost_doma(to)'];
-$Material_sten = $_POST['Material_sten'];
-$Remont = $_POST['Remont'];
-$Data_prosmotra = $_POST['Data_prosmotra'];
-$Dop_komenty = $_POST['Dop_komenty'];
+$Fio = addslashes($_POST['Fio']);
+$Bir_day = addslashes($_POST['Bir_day']);
+$Mob_tel = addslashes($_POST['Mob_tel']);
+$Email = addslashes($_POST['E-mail']);
+$Town_when_buy_kv = addslashes($_POST['Town_when_buy_kv']);
+$Zastroischik = addslashes($_POST['Zastroischik']);
+$JK = addslashes($_POST['JK']);
+$Price_kvartirif = addslashes($_POST['Price_kvartiri(from)']);
+$Price_kvartirit = addslashes($_POST['Price_kvartiri(to)']);
+$Kolvo_komnat = addslashes($_POST['Kol-vo_komnat']);
+$Srok_sdachi = addslashes($_POST['Srok_sdachi']);
+$Ploschad_kvartirif = addslashes($_POST['Ploschad_kvartiri(from)']);
+$Ploschad_kvartirit = addslashes($_POST['Ploschad_kvartiri(to)']);
+$Ploschad_kuhnif = addslashes($_POST['Ploschad_kuhni(from)']);
+$Ploschad_kuhnit = addslashes($_POST['Ploschad_kuhni(to)']);
+$Raion = addslashes($_POST['Raion']);
+$Etazhf = addslashes($_POST['Etazh(from)']);
+$Etazht = addslashes($_POST['Etazh(to)']);
+$Etazhnost_domaf = addslashes($_POST['Etazhnost_doma(from)']);
+$Etazhnost_domat = addslashes($_POST['Etazhnost_doma(to)']);
+$Material_sten = addslashes($_POST['Material_sten']);
+$Remont = addslashes($_POST['Remont']);
+$Data_prosmotra = addslashes($_POST['Data_prosmotra']);
+$Dop_komenty = addslashes($_POST['Dop_komenty']);
 
 $servername = "localhost";
 $username = "Admin";
