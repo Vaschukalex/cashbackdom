@@ -19,26 +19,26 @@ $username = "Admin";
 $password = "4444";
 $dbname = "caschbackdom";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if($conn->connect_error){
-    die("Connection failed:" . $conn->connect_error);
+$mysqli = new mysqli($servername, $username, $password, $dbname);
+if($mysqli->connect_error){
+    die("Connection failed:" . $mysqli->connect_error);
 }
 
 $sql ="INSERT INTO anketa_data (brand, Site_n, social, Name_Ur_lic, Gorod_prisytstvia, Vidi_tovarov, Osnovnie_kanali, Kolvo_komnat, Dolia_rashodow, Opit_isp, Fio_dolzh, Contact)
 VALUES ('$brand', '$Site_n ', '$social', '$Name_Ur_lic', '$Gorod_prisytstvia', '$Vidi_tovarov', '$Osnovnie_kanali', '$Kolvo_komnat', '$Dolia_rashodow', '$Opit_isp', '$Fio_dolzh', '$Contact')";
 
-if ($conn->query($sql) === TRUE){
+if ($mysqli->query($sql) === TRUE){
     echo "Data go";
 }
 else{
-    echo "error:" . $sql . "<br>" . $conn->error;
+    echo "error:" . $sql . "<br>" . $mysqli->error;
 }
-$conn->close();
+$mysqli->close();
 
 $method = $_SERVER['REQUEST_METHOD'];
 
 $c = true;
-if ( $method === 'POST' ) {
+if ( $method == 'POST' ) {
 
 	$project_name = trim($_POST["project_name"]);
 	$admin_email  = trim($_POST["admin_email"]);
@@ -54,7 +54,7 @@ if ( $method === 'POST' ) {
 			";
 		}
 	}
-} else if ( $method === 'GET' ) {
+} else if ( $method == 'GET' ) {
 
 	$project_name = trim($_GET["project_name"]);
 	$admin_email  = trim($_GET["admin_email"]);

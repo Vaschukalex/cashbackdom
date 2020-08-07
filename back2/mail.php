@@ -31,21 +31,21 @@ $username = "Admin";
 $password = "4444";
 $dbname = "caschbackdom";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if($conn->connect_error){
-    die("Connection failed:" . $conn->connect_error);
+$mysqli = new mysqli($servername, $username, $password, $dbname);
+if($mysqli->connect_error){
+    die("Connection failed:" . $mysqli->connect_error);
 }
 
 $sql ="INSERT INTO anketa2_data (Fio, Bir_day, Mob_tel, Email, Town_when_buy_kv, Zastroischik, JK, Price_kvartirif, Price_kvartirit, Kolvo_komnat, Srok_sdachi, Ploschad_kvartirif, Ploschad_kvartirit, Ploschad_kuhnif, Ploschad_kuhnit, Raion, Etazhf, Etazht, Etazhnost_domaf, Etazhnost_domat, Material_sten, Remont, Data_prosmotra, Dop_komenty)
 VALUES ('$Fio', '$Bir_day', '$Mob_tel', '$Email', '$Town_when_buy_kv', '$Zastroischik', '$JK', '$Price_kvartirif', '$Price_kvartirit', '$Kolvo_komnat', '$Srok_sdachi', '$Ploschad_kvartirif', '$Ploschad_kvartirit', '$Ploschad_kuhnif', '$Ploschad_kuhnit', '$Raion', '$Etazhf', '$Etazht', '$Etazhnost_domaf', '$Etazhnost_domat', '$Material_sten', '$Remont', '$Data_prosmotra', '$Dop_komenty')";
 
-if ($conn->query($sql) === TRUE){
+if ($mysqli->query($sql) === TRUE){
     echo "Data go";
 }
 else{
-    echo "error:" . $sql . "<br>" . $conn->error;
+    echo "error:" . $sql . "<br>" . $mysqli->error;
 }
-$conn->close();
+$mysqli->close();
 
 $method = $_SERVER['REQUEST_METHOD'];
 
