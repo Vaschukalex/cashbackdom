@@ -63,8 +63,4 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'From: ' . adopt($project_name) . '' . PHP_EOL .
     'Reply-To:' . PHP_EOL;
 
-if (mail($admin_email, adopt($form_subject), $message, $headers)) {
-    echo json_encode(['status' => 'success', 'message' => 'All data sent.']);
-} else {
-    echo json_encode(['status' => 'danger', 'message' => 'error...']);
-}
+mail($admin_email, adopt($form_subject), $message, $headers);

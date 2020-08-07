@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 
 <body>
@@ -139,9 +140,8 @@
                     <h3>Контактные данные:</h3>
                     <br>
                 </div>
-                <form action="back2/mail.php" method="POST">
+                <form action="appartement/mail.php" method="POST">
                     <input type="hidden" name="project_name" value="caschbackdom" required>
-                    <input type="hidden" name="admin_email" value="caschbackdom@gmail.com" required>
                     <input type="hidden" name="form_subject" value="Анкета 2" required>
                     <div class="conc_form">
                         <div class="conc_form_wrap fir_conc">
@@ -301,7 +301,8 @@
                             </div>
                             <div class="conc_form_wrap thi_conc str2_li">
                                 <p class="conc_f_text">Удобная дата и время просмотра объекта:</p>
-                                <input name="Data_prosmotra" id='wd' placeholder="чч.мм.гг. _ _ : _ _" type="text" required>
+                                <input name="Data_prosmotra" id='wd' placeholder="чч.мм.гг. _ _ : _ _" type="text"
+                                    required>
                             </div>
                         </div>
                     </div>
@@ -311,7 +312,7 @@
                             placeholder="Ваши очень важные замечания и комментарии....."></textarea>
                     </div>
                     <div class="btn_place">
-                        <button type="submit" class="btn subm" id="submi">Отправить заявку</button>
+                        <button type="submit" class="btn subm" id="submit">Отправить заявку</button>
                     </div>
                 </form>
             </div>
@@ -328,6 +329,7 @@
             });
         </script>
         <script src="appartement/appartement.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </body>
 
 </html>
