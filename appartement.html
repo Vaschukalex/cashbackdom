@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>caschbackdom.ru | Анкета</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -79,7 +81,8 @@
                     <h2>Добрый день!</h2>
                 </div>
                 <br>
-                <p>После заполнения вами этой заявки, мы соберем по ней самые подходящие предложения застройщиков и отправим их вам. Чем подробнее вы заполните форму, тем точнее будет результат подбора квартир.
+                <p>После заполнения вами этой заявки, мы соберем по ней самые подходящие предложения застройщиков и
+                    отправим их вам. Чем подробнее вы заполните форму, тем точнее будет результат подбора квартир.
                 </p>
                 <br>
                 <div class="pr_h2">
@@ -88,33 +91,41 @@
                 <div class="pr_text">
                     <br>
                     <div class="pr_double_text">
-                        <div class="circle"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="circle"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="4.5" cy="4.5" r="4.5" fill="#FCDA48" />
                             </svg>
                         </div>
-                        <p>При заполнении анкеты мы предлагаем вам чаще обращать внимание на вариант ответа «не принципиально», возможность отметить несколько пунктов или оставить свой вариант ответа. Это необходимо, для того чтобы не отсекать те предложения,
+                        <p>При заполнении анкеты мы предлагаем вам чаще обращать внимание на вариант ответа «не
+                            принципиально», возможность отметить несколько пунктов или оставить свой вариант ответа. Это
+                            необходимо, для того чтобы не отсекать те предложения,
                             которые могут превзойти ваши ожидания.
                         </p>
                     </div>
 
                     <br>
                     <div class="pr_double_text">
-                        <div class="circle"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="circle"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="4.5" cy="4.5" r="4.5" fill="#FCDA48" />
                             </svg>
                         </div>
-                        <p>В последнем вопросе вы можете написать все, что необходимо знать застройщикам о вашей будущей квартире, если мы об этом не спросили в анкете.
+                        <p>В последнем вопросе вы можете написать все, что необходимо знать застройщикам о вашей будущей
+                            квартире, если мы об этом не спросили в анкете.
 
                         </p>
                     </div>
 
                     <br>
                     <div class="pr_double_text">
-                        <div class="circle"><svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="circle"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="4.5" cy="4.5" r="4.5" fill="#FCDA48" />
                             </svg>
                         </div>
-                        <p>В данный момент наш сервис работает в тестовом режиме. Если в течение трех рабочих дней с момента заполнения этой заявки, наш алгоритм не сформирует вам набор предложений с кэшбэком от застройщиков, с вами лично свяжется наш специалист.
+                        <p>В данный момент наш сервис работает в тестовом режиме. Если в течение трех рабочих дней с
+                            момента заполнения этой заявки, наш алгоритм не сформирует вам набор предложений с кэшбэком
+                            от застройщиков, с вами лично свяжется наш специалист.
                         </p>
                     </div>
                     <br>
@@ -129,27 +140,28 @@
                     <br>
                 </div>
                 <form action="back2/mail.php" method="POST">
-                    <input type="hidden" name="project_name" value="caschbackdom">
-                    <input type="hidden" name="admin_email" value="caschbackdom@gmail.com">
-                    <input type="hidden" name="form_subject" value="Анкета 2">
+                    <input type="hidden" name="project_name" value="caschbackdom" required>
+                    <input type="hidden" name="admin_email" value="caschbackdom@gmail.com" required>
+                    <input type="hidden" name="form_subject" value="Анкета 2" required>
                     <div class="conc_form">
                         <div class="conc_form_wrap fir_conc">
                             <p class="conc_f_text">ФИО:</p>
-                            <input name="Fio" placeholder=" Иванов Иван" type="text">
+                            <input name="Fio" placeholder=" Иванов Иван" type="text" required>
 
 
                         </div>
                         <div class="conc_form_wrap sec_conc">
                             <p class="conc_f_text">Дата рождения:</p>
-                            <input name="Bir_day" id='bd' placeholder="чч.мм.гг." type="text">
+                            <input name="Bir_day" id='bd' placeholder="чч.мм.гг." type="text" required>
                         </div>
                         <div class="conc_form_wrap thi_conc">
                             <p class="conc_f_text">Моб. телефон:</p>
-                            <input name="Mob_tel" id="phone" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _" type="tel">
+                            <input name="Mob_tel" id="phone" placeholder="+7 (_ _ _) - _ _ _ - _ _ - _ _" type="tel"
+                                required>
                         </div>
                         <div class="conc_form_wrap fou_conc">
                             <p class="conc_f_text">E-mail:</p>
-                            <input name="E-mail" placeholder="Введите Ваш E-mail" type="email">
+                            <input name="E-mail" placeholder="Введите Ваш E-mail" type="email" required>
                         </div>
                     </div>
                     <div class="details_data in_2">
@@ -162,23 +174,25 @@
                             <div class="det_form_wrap_duo">
                                 <div class="det_form_wrap det_fir">
                                     <p class="det_form_text">Город, в котором планируете купить квартиру:</p>
-                                    <input name="Town_when_buy_kv" placeholder="В каком городе хотите купить квартиру?" type="text">
+                                    <input name="Town_when_buy_kv" placeholder="В каком городе хотите купить квартиру?"
+                                        type="text" required>
                                 </div>
                                 <div class="det_form_wrap  det_sec">
                                     <p class="det_form_text">Интересующий застройщик:</p>
-                                    <input name="Zastroischik" placeholder="Застрощик" type="text">
+                                    <input name="Zastroischik" placeholder="Застрощик" type="text" required>
                                 </div>
                             </div>
                             <div class="det_form_wrap_duo">
                                 <div class="det_form_wrap det_fir">
                                     <p class="det_form_text">ЖК:</p>
-                                    <input name="JK" placeholder="ЖК" type="text">
+                                    <input name="JK" placeholder="ЖК" type="text" required>
                                 </div>
                                 <div class="det_form_wrap  det_sec">
                                     <p class="det_form_text izm">Стоимость квартиры от и до в рублях:</p>
                                     <div class="fr_to">
-                                        <input name="Price_kvartiri(from)" placeholder="Стоимость от" type="text">
-                                        <input name="Price_kvartiri(to)" placeholder="до" type="text">
+                                        <input name="Price_kvartiri(from)" placeholder="Стоимость от" type="text"
+                                            required>
+                                        <input name="Price_kvartiri(to)" placeholder="до" type="text" required>
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +201,7 @@
                             <div class="det_form_four g_rid">
                                 <div class="det_form_wrap d_fi">
                                     <p class="det_form_text">Кол-во комнат</p>
-                                    <select name="Kol-vo_komnat">
+                                    <select name="Kol-vo_komnat" required>
                                         <option>Студия</option>
                                         <option> 1</option>
                                         <option> 2</option>
@@ -199,7 +213,7 @@
                                 <div class="det_form_wrap d_s">
                                     <p class="det_form_text">Срок сдачи
                                     </p>
-                                    <select name="Srok_sdachi">
+                                    <select name="Srok_sdachi" required>
                                         <option>Сдан</option>
                                         <option>В ближайшее время</option>
                                         <option>до 2021</option>
@@ -211,15 +225,15 @@
                                 <div class="det_form_wrap d_t">
                                     <p class="det_form_text">Площадь квартиры</p>
                                     <div class="fr_to">
-                                        <input name="Ploschad_kvartiri(from)" placeholder="от" type="text">
-                                        <input name="Ploschad_kvartiri(to)" placeholder="до" type="text">
+                                        <input name="Ploschad_kvartiri(from)" placeholder="от" type="text" required>
+                                        <input name="Ploschad_kvartiri(to)" placeholder="до" type="text" required>
                                     </div>
                                 </div>
                                 <div class="det_form_wrap d_f">
                                     <p class="det_form_text">Площадь кухни</p>
                                     <div class="fr_to">
-                                        <input name="Ploschad_kuhni(from)" placeholder="от" type="text">
-                                        <input name="Ploschad_kuhni(to)" placeholder="до" type="text">
+                                        <input name="Ploschad_kuhni(from)" placeholder="от" type="text" required>
+                                        <input name="Ploschad_kuhni(to)" placeholder="до" type="text" required>
                                     </div>
                                 </div>
                             </div>
@@ -227,7 +241,7 @@
                             <div class="det_form_four g_rid_fri">
                                 <div class="det_form_wrap d_fi arr">
                                     <p class="det_form_text">Район</p>
-                                    <select name="Raion">
+                                    <select name="Raion" required>
                                         <option>Центр</option>
                                         <option>Лесобаза</option>
                                         <option>Заречные микрорайоны</option>
@@ -246,15 +260,15 @@
                                     <p class="det_form_text">Этаж
                                     </p>
                                     <div class="fr_to">
-                                        <input name="Etazh(from)" placeholder="от" type="text">
-                                        <input name="Etazh(to)" placeholder="до" type="text">
+                                        <input name="Etazh(from)" placeholder="от" type="text" required>
+                                        <input name="Etazh(to)" placeholder="до" type="text" required>
                                     </div>
                                 </div>
                                 <div class="det_form_wrap d_t">
                                     <p class="det_form_text">Этажность дома</p>
                                     <div class="fr_to">
-                                        <input name="Etazhnost_doma(from)" placeholder="от" type="text">
-                                        <input name="Etazhnost_doma(to)" placeholder="до" type="text">
+                                        <input name="Etazhnost_doma(from)" placeholder="от" type="text" required>
+                                        <input name="Etazhnost_doma(to)" placeholder="до" type="text" required>
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +276,7 @@
                         <div class="conc_form">
                             <div class="conc_form_wrap thi_conc">
                                 <p class="conc_f_text">Материал стен:</p>
-                                <select name="Material_sten">
+                                <select name="Material_sten" required>
                                     <option>Монолитный</option>
                                     <option>Панельный</option>
                                     <option>Кирпичный</option>
@@ -276,7 +290,7 @@
                             </div>
                             <div class="conc_form_wrap fou_conc">
                                 <p class="conc_f_text">Ремонт:</p>
-                                <select name="Remont">
+                                <select name="Remont" required>
                                     <option>Косметический ремонт</option>
                                     <option>Чистовая отделка</option>
                                     <option>Улучшенная черновая отделка</option>
@@ -287,13 +301,14 @@
                             </div>
                             <div class="conc_form_wrap thi_conc str2_li">
                                 <p class="conc_f_text">Удобная дата и время просмотра объекта:</p>
-                                <input name="Data_prosmotra" id='wd' placeholder="чч.мм.гг. _ _ : _ _" type="text">
+                                <input name="Data_prosmotra" id='wd' placeholder="чч.мм.гг. _ _ : _ _" type="text" required>
                             </div>
                         </div>
                     </div>
                     <div class="comment_block">
                         <p class="conc_f_text">Дополнения и комментарии:</p>
-                        <textarea name="Dop_komenty" placeholder="Ваши очень важные замечания и комментарии....."></textarea>
+                        <textarea name="Dop_komenty"
+                            placeholder="Ваши очень важные замечания и комментарии....."></textarea>
                     </div>
                     <div class="btn_place">
                         <button type="submit" class="btn subm" id="submi">Отправить заявку</button>
@@ -305,14 +320,14 @@
         <script src="scripts/jquery.maskedinput.js"></script>
         <script src="scripts/jquery.maskedinput.min.js"></script>
         <script>
-            $(function() {
+            $(function () {
                 $("#phone").mask("+7(999) 999-9999");
                 $("#bd").mask("99.99.99");
                 $("#wd").mask("99.99.99 99:99");
 
             });
         </script>
-        <script src="back2/script.js"></script>
+        <script src="appartement/appartement.js"></script>
 </body>
 
 </html>
